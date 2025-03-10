@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>DISPLACE West Coast documentation - 2&nbsp; Fisheries data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./results.html" rel="next">
+<link href="./populations.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./fisheries.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Fisheries data</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">DISPLACE West Coast documentation</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./populations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Populations data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fisheries.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Fisheries data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Results</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-parametrization-fisheries" id="toc-sec-parametrization-fisheries" class="nav-link active" data-scroll-target="#sec-parametrization-fisheries"><span class="header-section-number">2.1</span> Fisheries</a>
+  <ul class="collapse">
+  <li><a href="#vessels-specifications" id="toc-vessels-specifications" class="nav-link" data-scroll-target="#vessels-specifications"><span class="header-section-number">2.1.1</span> Vessels specifications</a></li>
+  <li><a href="#economic-data" id="toc-economic-data" class="nav-link" data-scroll-target="#economic-data"><span class="header-section-number">2.1.2</span> Economic data</a></li>
+  <li><a href="#harbors" id="toc-harbors" class="nav-link" data-scroll-target="#harbors"><span class="header-section-number">2.1.3</span> Harbors</a></li>
+  <li><a href="#selectivity" id="toc-selectivity" class="nav-link" data-scroll-target="#selectivity"><span class="header-section-number">2.1.4</span> Selectivity</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-fisheries" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Fisheries data</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="sec-parametrization-fisheries" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-parametrization-fisheries"><span class="header-section-number">2.1</span> Fisheries</h2>
+<p>This section includes a description of the raw input datasets and the parameters considered to run the R routines related to the fisheries characteristics, including information on individual fishing vessels, gears, metiers, economics of the vessels, etc. These files should be stored and loaded from <code>DISPLACE_raw_inputs/{project-name}/FISHERIES</code>.</p>
+<p>Such information is derived from available VMS, fish ticket (fishtix), and vessel registry data, through which we define the vessel parameters required to run DISPLACE. VMS data was obtained from the Bureau of Ocean Energy Management (BOEM) and is not publicly available. With the exception of vessel registry data—sourced from open sources—VMS and fishtix data are stored outside our cloud and repository infrastructure to comply with data sharing agreements (You’ll need to have this data locally in order to run it).</p>
+<p>As for the data represented, no confidential data is displayed, and all information is aggregated to comply with the rule of three.</p>
+<!-- ### Data -->
+<!-- This analysis uses VMS and fish ticket data from 2010 to 2017.  -->
+<!-- **VMS:** -->
+<!-- - `vessel_name`: Name of the vessel. There are several inconsistencies across different registries and datasets, making this a poor variable for identifying and cross-referencing vessels between datasets. -->
+<!-- - `docnum`: Document number for the vessel. This corresponds to the CF document number and can be used to relate to the primary vehicle number in open registries. -->
+<!-- - `date.time`: Date and time of the recorded event, in UTC (Coordinated Universal Time). -->
+<!-- - `latitude`: Latitude position of the vessel during the event. -->
+<!-- - `longitude`: Longitude position of the vessel during the event. -->
+<!-- - `course`: Direction of the vessel’s travel. -->
+<!-- - `avg_course`: Average course calculated over a specific period. (NOTE: unsure on whether this period is a trip or others.) -->
+<!-- - `speed`: Speed of the vessel at the time of the event. -->
+<!-- - `avg_speed`: Average speed calculated over a specific period. (NOTE: unsure on whether this period is a trip or others.) -->
+<!-- - `declarations`: Declaration code of the fishery associated. See @tbl-declaration-codes-wang for details. -->
+<!-- - `vessel_doc`: Vessel's document number. Combination of `vessel_name` and `docnum` (e.g., `{name}_{docnum}`). -->
+<!-- - `westcoastdate`: Date corresponding to the West Coast timezone. -->
+<!-- - `eez`: Code to indicate whether the ping is within the Exclusive Economic Zone (EEZ) or not (levels 0 and 1). -->
+<!-- - `outport`: Whether the vessel is in or out of a port (levels 0 and 1). -->
+<!-- - `inorout`: Whether the vessel is moving in or out of the port (levels 0 and 1). -->
+<!-- - `tripno`: Unique trip number for each voyage. -->
+<!-- - `laglon`: Previous longitude recorded in the dataset. -->
+<!-- - `laglat`: Previous latitude recorded in the dataset. -->
+<!-- - `lag_westcoastdate`: Previous date in the West Coast timezone. -->
+<!-- - `tmdiff_hr`: Time difference between consecutive events, in hours. -->
+<!-- - `segment_dur`: Time difference between consecutive events, in seconds. -->
+<!-- - `segment_dist`: Distance traveled during a segment, in meters. -->
+<!-- - `avg_speed_recalc`: Recalculated average speed in the segment based on `segment_dist` and `segment_dur` (m/s). -->
+<!-- - `avg_speed_recalc_knot`: Recalculated average speed in knots. -->
+<!-- - `vessel_doc_tripno`: Combination of the vessel document and trip number (e.g., `{name}_{docnum}_{tripno}`). -->
+<!-- - `fishingornot`: Indicates if the vessel was fishing during a specific VMS ping (levels `fish`/`nofish`). -->
+<!-- - `timezone`: Timezone in which the event was recorded. -->
+<!-- - `date.time.tz`: Date and time of the event adjusted for the timezone. It should match `westcoastdate`. -->
+<!-- - `localdawn`: Time of local dawn at the ping's location. -->
+<!-- - `localdusk`: Time of local dusk at the ping's location. -->
+<!-- - `day_night`: Indicates if the event occurred during day or night. -->
+<!-- - `eventno`: this variable marks different phases of the trip, where each event represents a distinct period during which the vessel is either fishing or not fishing. Each time there is a transition between fishing and non-fishing, the `eventno` increments, effectively segmenting the trip into discrete events. -->
+<!-- ```{r} -->
+<!-- #| label: tbl-vms-example -->
+<!-- #| tbl-cap: Sample of processed VMS data. Vessel identification numbers are hidden for confidentiality. Values have been randomized and do not reflect actual data. -->
+<!-- df <- processed_vms$processed_vms  -->
+<!-- df$vessel_name <-  "********" -->
+<!-- df$docnum <- "********" -->
+<!-- df$vessel_doc_tripno <- "********" -->
+<!-- df$vessel_doc <- "********" -->
+<!-- df_randomized <- df %>% -->
+<!--   mutate(across( -->
+<!--     everything(), -->
+<!--     .fns = ~ if (inherits(., "POSIXct")) sample(.) else if (is.numeric(.)) sample(.) else if (is.character(.)) sample(.) else . -->
+<!--     )) -->
+<!-- tail(df_randomized,3) %>% kable(row.names = FALSE) -->
+<!-- ``` -->
+<!-- **Fish Tickets:** -->
+<!-- - `landingreceiptnum`: Fish ticket unique identification number, allowing to distinguish between landings. This should be unique per event (date), vessel, port, and declaration code. -->
+<!-- - `newdate`: Date when the landing occurred (i.e., when the fish ticket was issued). -->
+<!-- - `vesselid`: Vessel identification number. This does not correspond to the CF.DOC number but can be matched with it using the mapping in `VesselRegExtract_clean_revise.csv`. -->
+<!-- - `pounds_sum`: Total amount landed across all species captured. -->
+<!-- - `values_sum`: Value derived from selling the landings. -->
+<!-- - `species_code_all`: Species captured, saved as a line separated by "/". All variables ending with `_all` use this delimiter. (e.g., Dover Sole and Sablefish was captured then it will be indicated as `dover sole/sablefish`) -->
+<!-- - `gear_name_all`: Gear used, associated with each captured species. The order is consistent across all variables ending with `_all`. The first value here corresponds to the first value in `species_code_all`, and so on. -->
+<!-- - `gear_code_all`: Code associated with the gear used. -->
+<!-- - `lbs_all`: Amount landed corresponding to each species in `species_code_all`. -->
+<!-- - `rev_all`: Revenue associated with that specific landing. -->
+<!-- - `block_all`: Fishing blocks, which are specific geographic areas used for tracking the location of fishing activity along the West Coast. -->
+<!-- - `port_all`: Port ID where the landing occurred. Some errors have been observed with this variable, as each fish ticket should be associated with a single port. However, in some cases, two or more distinct ports are included. -->
+<!-- - `portid`: Port ID where the landing occurred. This is the port variable we will use, as `port_all` contains some errors with more than one harbor indicated. -->
+<!-- - `month`: Month when the ticket was issued. -->
+<!-- - `yr`: Year when the ticket was issued. -->
+<!-- ```{r} -->
+<!-- #| label: tbl-tix-example -->
+<!-- #| tbl-cap: Sample of contents associated with each landing receipt. Vessel ID and landing receipt number are hidden for confidentiality reasons. Values have been randomized and do not reflect actual data. -->
+<!-- df <- readRDS(glue::glue(raw_fix_10_19_path, "2017fishtix_groundfish_combreceipts.rds")) -->
+<!-- df$landingreceiptnum <- "********" -->
+<!-- df$vesselid <- "********" -->
+<!-- df_randomized <- df %>% -->
+<!--   mutate(across( -->
+<!--     .cols = c(pounds_sum, values_sum, newdate, month, yr), -->
+<!--     .fns = ~ if (inherits(., "POSIXct")) sample(.) else if (is.numeric(.)) sample(.) else if (is.character(.)) sample(.) else .)) -->
+<!-- df_randomized %>% tail(2) %>% kable(row.names = FALSE) -->
+<!-- ``` -->
+<!-- ### Data preprocessing -->
+<!-- VMS data was processed from raw `csv` files using the methods from @wang2024high, which code was shared by Yi-Hui Wang and adapted to our needs. These processing steps are available in the `function_fe.R` file and can be executed using the `processed_vms` target. -->
+<!-- Fish ticket data was provided in `rds` files, already preprocessed, and included information such as date, vessel ID, landing amounts, revenues, species, and associated gear. -->
+<!-- We also used data merging methods adapted from @wang2024high to link VMS data with fish ticket information all included within the `matched_vmstix_groundfish` target object. Summary of variables included: -->
+<!-- - **Included from Fish Ticket**: `landingreceiptnum`, `newdate`, `vesselid`, `pounds_sum`, `values_sum`, `species_code_all`, `gear_name_all`, `gear_code_all`, `lbs_all`, `rev_all`, `block_all`, `port_all`, `portid`, `yr` -->
+<!-- - **Included from VMS**: `vessel_name`, `docnum`, `date.time`, `latitude`, `longitude`, `avg_course`, `avg_speed`, `declarations`, `vessel_doc`, `westcoastdate`, `eez`, `outport`, `inorout`, `tripno`, `laglon`, `laglat`, `lag_westcoastdate`, `tmdiff_hr`, `segment_dur`, `segment_dist`, `avg_speed_recalc`, `avg_speed_recalc_knot`, `vessel_doc_tripno`, `fishingornot`, `eventno` -->
+<!-- - **New Variables**: `VMS_RECNO`, `num_removals`, `end`, `prev_ticket_dttm`, `lookback_dttm`, `begin`, `trip_dur`, `x_coord`, `y_coord`, `NGDC_M`, `has_vms`, `keep_remove_portdist`, `keep_remove_speed`, `keep_remove_bathy`, `remove` -->
+<!-- The analysis was then limited to the species, declaration codes, and ports of interest as detailed in the following sections. From the vms-fishtix merge (`vms_filtered_tix_data`), we get aggregated landing values in lbs of capture and revenues disaggregated by species, declaration code, and port, by vessel ID, with associated information on landing receipt, date, and others. For our time range (2010-2017), data selection and filtering included data for 286 vessels. -->
+<!-- ```{r} -->
+<!-- #| label: tbl-vms-tix-merge-example -->
+<!-- #| tbl-cap: Merged VMS and Fish Ticket data example. Vessel ID and landing receipt number are hidden for confidentiality reasons. Values have been randomized and do not reflect actual data. -->
+<!-- df <- matched_vmstix_groundfish$matched_filtered_groundfish_final -->
+<!-- df$landingreceiptnum <- "********" -->
+<!-- df$vesselid <- "********" -->
+<!-- df$vessel_name <- "********" -->
+<!-- df$docnum <- "********" -->
+<!-- df$vessel_doc_tripno <- "********" -->
+<!-- df$vessel_doc <- "********" -->
+<!-- df$VMS_RECNO <- "********" -->
+<!-- df_randomized <- df %>% -->
+<!--   mutate(across( -->
+<!--     .cols = -c(species_code_all, gear_name_all, gear_code_all, lbs_all, rev_all,  -->
+<!--                block_all, port_all, portid), -->
+<!--     .fns = ~ if (inherits(., "POSIXct")) sample(.) else if (is.numeric(.)) sample(.) else if (is.character(.)) sample(.) else .)) -->
+<!-- df_randomized %>% head(2) %>% kable() -->
+<!-- ``` -->
+<!-- **NOTE: Clarify with Yi-Hui the preprocessing done to fish tickets and the associated issues.** -->
+<section id="vessels-specifications" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="vessels-specifications"><span class="header-section-number">2.1.1</span> Vessels specifications</h3>
+<p>The DISPLACE input file <code>vessels_specifications_per_harbour_metiers.csv</code> contains information on individual or grouped vessel characteristics by harbor and metier (i.e., each vessel could be repeated more than once in this table if it belongs to more than one metier or lands in different ports). Métier is defined as a combination of gear and target species or fisheries that are distinctly defined.</p>
+<p>The variables included in this dataset are detailed below and are referenced within the <code>generate_vessels_specifications</code> function in <code>r/functions_fe.R</code>:</p>
+<ul>
+<li><p><code>VesselId</code>: This variable corresponds to the vessel IDs. This could represent VMS ID, IMO number, or any other identification value with which we can distinguish individual vessels or grouped vessels. In our case, we use the vessel documentation number (<code>docnum</code>) extracted from VMS data, which corresponds to the primary Vessel Number in USCG datasets and the Vessel Registration Number in NOAA datasets, as a reference code to identify vessels. However, the DISPLACE nomenclature for vessel IDs consists of the country code followed by a numeric code (e.g., USA0001, USA0002, etc.). Therefore, we have recoded all <code>docnum</code> values to align with it and stored a mapping key for future reference.</p></li>
+<li><p><code>nb_vessels</code>: This is the number of vessels represented by a unique ID. If we have information on all vessels available, this will have a value of 1. If we have limited information at an individual vessel level or want to simplify the analysis, we can group several vessels under the same ID and fisheries characteristics and specify here the number of vessels in each group.</p></li>
+</ul>
+<ul>
+<li><p><code>Port</code>: This is the port from where the vessels operate, or ports where they land the catches. If a vessel operates in more than one port, we should create two distinct observations for that vessel, distinguishing between one harbor and another. For this study case, we are including only vessels operating from ports with high landing of the species of interest.</p>
+<p>To determine such ports, we have evaluated which ports receive the highest landings of the 4 species of interest based on the vms-fishtix merge data. As seen in <a href="#tbl-high-catch-ports">Table&nbsp;<span>2.1</span></a>, if we select those ports with at least 2% of landings, this reduces the number of ports for analysis to 7 harbors out of 45 available in the vms-tix dataset.</p></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-high-catch-ports" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Table&nbsp;2.1: Harbours in california with the higher amount of landings. Detail on the number of vessels operating in each port, proving rule of three compliance.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: right;">port_id</th>
+<th style="text-align: left;">port_name</th>
+<th style="text-align: right;">total_lbs_all</th>
+<th style="text-align: right;">relative_value</th>
+<th style="text-align: right;">nb_vessels</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">220</td>
+<td style="text-align: left;">Eureka</td>
+<td style="text-align: right;">31507436</td>
+<td style="text-align: right;">42.88</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">223</td>
+<td style="text-align: left;">Fort_Bragg</td>
+<td style="text-align: right;">18594018</td>
+<td style="text-align: right;">25.31</td>
+<td style="text-align: right;">94</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">606</td>
+<td style="text-align: left;">Morro_Bay</td>
+<td style="text-align: right;">7179891</td>
+<td style="text-align: right;">9.77</td>
+<td style="text-align: right;">75</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">592</td>
+<td style="text-align: left;">Moss_Landing</td>
+<td style="text-align: right;">3268509</td>
+<td style="text-align: right;">4.45</td>
+<td style="text-align: right;">47</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">611</td>
+<td style="text-align: left;">Santa_Barbara</td>
+<td style="text-align: right;">2658614</td>
+<td style="text-align: right;">3.62</td>
+<td style="text-align: right;">39</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">201</td>
+<td style="text-align: left;">Crescent_City</td>
+<td style="text-align: right;">2446688</td>
+<td style="text-align: right;">3.33</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">550</td>
+<td style="text-align: left;">Monterey</td>
+<td style="text-align: right;">1560629</td>
+<td style="text-align: right;">2.12</td>
+<td style="text-align: right;">11</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-duplicate-port-example" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Table&nbsp;2.2: Example of a vessel representation when operating in different ports. Made-up data is used for example purposes.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">vesselid</th>
+<th style="text-align: right;">port_code</th>
+<th style="text-align: left;">Port</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">*****</td>
+<td style="text-align: right;">223</td>
+<td style="text-align: left;">Fort_Bragg</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">*****</td>
+<td style="text-align: right;">606</td>
+<td style="text-align: left;">Morro_Bay</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<ul>
+<li><p><code>dcf_gear</code>: This defines the metier. For European fisheries, the DCF relates to metiers defined using Data Collection Framework (DCF) datasets. However, here we can define any metier by vessel length, gear, species mix, or any other criteria, based on any dataset not necessarily spatially defined. For our case study, we’ll define them using the declaration codes from VMS data. <span class="citation" data-cites="wang2024high">Wang et al. (<a href="references.html#ref-wang2024high" role="doc-biblioref">2024</a>)</span> publication includes the declaration codes detailed below, among which we are interested in <code>c(210, 211, 230, 231, 233, 234, 235)</code>.</p>
+<p>We are temporarily using declaration codes instead of specific gear, following the methods outlined by <span class="citation" data-cites="wang2024high">Wang et al. (<a href="references.html#ref-wang2024high" role="doc-biblioref">2024</a>)</span>. The selection of declaration codes is based on the gears of interest, which are grouped within the above declaration codes. However, we expect to receive a NOAA VMS and fish ticket merged dataset that will allow us to define gear more specifically, rather than relying on declaration codes. The gears we are interested in, which are the only ones used for our species of interest, are: <code>SET LONGLINE</code>, <code>HOOK &amp; LINE</code>, <code>VERTICAL HOOK &amp; LINE/PORTUGUESE LONGLINE</code>, <code>TROLL (GROUNDFISH OR OTHER FISH)</code>, <code>FISH TRAP</code>, <code>TRAWL - FOOTROPE GREATER THAN 8 INCHES IN DIAMETER</code>, <code>SELECTIVE FLATFISH TRAWL SMALL FOOTROPE</code>, <code>TRAWL - FOOTROPE LESS THAN 8 INCHES IN DIAMETER</code>, <code>MIDWATER TRAWL</code>, <code>SINGLE-RIGGED TRAWL</code>, <code>PAIR TRAWL</code>, and <code>BOTTOM TRAWL</code>.</p></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-declaration-codes-wang" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Table&nbsp;2.3: Declaration Codes Included in Wang et al. publication.</caption>
+<colgroup>
+<col style="width: 4%">
+<col style="width: 95%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Decl.</th>
+<th style="text-align: left;">Description (dominant gear types)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">210</td>
+<td style="text-align: left;">Limited entry fixed gear not including shorebased IFQ (pots/traps, bottom longline, longline, hook and line)</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">211</td>
+<td style="text-align: left;">Limited entry groundfish non-trawl shorebased IFQ (pots/traps, bottom longline, longline, hook and line)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">220</td>
+<td style="text-align: left;">Limited entry midwater trawl gear non-whiting shorebased IFQ (midwater trawl for species other than whiting)</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">221</td>
+<td style="text-align: left;">Limited entry midwater trawl Pacific whiting shorebased IFQ (midwater trawl for whiting)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">222</td>
+<td style="text-align: left;">Limited entry midwater trawl Pacific whiting catcher-processor sector (midwater trawl for whiting)</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">223</td>
+<td style="text-align: left;">Limited entry midwater trawl Pacific whiting mothership sector; catcher vessel or mothership (midwater trawl for whiting)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">230</td>
+<td style="text-align: left;">Limited entry bottom trawl shorebased IFQ not including demersal trawl</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">231</td>
+<td style="text-align: left;">Limited entry demersal trawl shorebased IFQ</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">233</td>
+<td style="text-align: left;">Open access longline gear for groundfish</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">234</td>
+<td style="text-align: left;">Open access groundfish trap or pot gear</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">235</td>
+<td style="text-align: left;">Open access line gear for groundfish</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">Non-groundfish trawl gear for ridgeback prawn</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">241</td>
+<td style="text-align: left;">Non-groundfish trawl gear for pink shrimp</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">242</td>
+<td style="text-align: left;">Non-groundfish trawl gear for California halibut</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">243</td>
+<td style="text-align: left;">Non-groundfish trawl gear for sea cucumber</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">250</td>
+<td style="text-align: left;">Tribal trawl gear</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">260</td>
+<td style="text-align: left;">Open access prawn trap or pot gear</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">261</td>
+<td style="text-align: left;">Open access Dungeness crab trap or pot gear</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">262</td>
+<td style="text-align: left;">Open access Pacific Halibut longline gear</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">263</td>
+<td style="text-align: left;">Open access salmon troll gear</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">264</td>
+<td style="text-align: left;">Open access California halibut line gear</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">265</td>
+<td style="text-align: left;">Open access sheephead trap or pot gear</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">266</td>
+<td style="text-align: left;">Open access Highly Migratory Species line gear</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">267</td>
+<td style="text-align: left;">Open access Coastal Pelagic Species net gear</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">268</td>
+<td style="text-align: left;">Open access California gillnet complex gear</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">269</td>
+<td style="text-align: left;">A gear that is not listed above</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<ul>
+<li><p><code>Gear</code>: Despite the name of the variable, this field does not contain the actual gear used by the vessel but rather the name of the <code>.shp</code> file that spatially defines the fishing effort for that specific gear or gear group. These spatial files must be available inside <code>DISPLACE_raw_inputs/{project-name}/FISHERIES/SpatialLayers</code>. In this analysis, we used declaration codes from VMS rather than the gear information available in the fish tickets. Therefore, this analysis relies on the gear information and fishing distribution associated with each declaration code indicated in variable <code>dcf_gear</code>.</p>
+<p>To define effort distributions, we applied the methodology used to generate the effort maps from <span class="citation" data-cites="wang2024high">Wang et al. (<a href="references.html#ref-wang2024high" role="doc-biblioref">2024</a>)</span> on the VMS-tix merged data by declaration codes and filtering values for our target species. Additionally, we accounted only for vessels operating from our harbors of interest.</p>
+<p>For the declaration codes of interest, we generated a fishing effort density map for each except for declaration code 231, for which we follow a similar approach to that taken by <span class="citation" data-cites="wang2024high">Wang et al. (<a href="references.html#ref-wang2024high" role="doc-biblioref">2024</a>)</span>, and aggregate with declaration code 230 (both related to trawl) since the former had very low overall fishing effort. Thus, 6 different <code>Gear</code> levels were defined to represent the métiers included in this analysis. These levels were assigned by matching the file names with the relevant declaration codes or combinations of codes, specifying whether the vessel in question is involved in that fishery. These spatial layers were saved as DISPLACE inputs in <code>shp</code> format.</p>
+<p>The values from <span class="citation" data-cites="wang2024high">Wang et al. (<a href="references.html#ref-wang2024high" role="doc-biblioref">2024</a>)</span> are expressed in <span class="math inline">\(km/km^2/year\)</span>. However, DISPLACE outputs represent fishing effort as cumulative fishing time in hours. To allow comparison with the DISPLACE outputs, we have adapted the methods described in <span class="citation" data-cites="wang2024high">Wang et al. (<a href="references.html#ref-wang2024high" role="doc-biblioref">2024</a>)</span>. Additionally, DISPLACE uses this fishing distribution to assess the probability that a simulated fishing vessel will fish at a given node. In discussions with Bastardie, we assessed the need to input such FE distributions in probability units. However, after testing the R routines with two different FE shapefile inputs—one based on cumulative times and the other on probabilities—we found that both approaches, given their identical distributions, produce nearly identical <code>vesselsspe_freq_fgrounds_quarter1.dat</code> files—the ones read by DISPLACE defining fishing probabilities.</p></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-fe-gear" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fisheries_files/figure-html/fig-fe-gear-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;2.1: Fishing effort distribution by declaration code from 2010-2017 (probability of fishing). Filtered by species of interest. Cells visited by three or fewer vessels are not displayed to comply with the rule of three.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><p><code>VE_LEN</code> and <code>Tonnage</code>: These parameters correspond to vessel length (m) and vessel tonnage (any unit).Tonnage values are not used as DISPLACE inputs, but included as a references. Further, we use tonnage values to extrapolate other parameters such as engine power or fuel tank capacity. Neither the VMS nor fish ticket data contain much information on vessel characteristics. To obtain such information, we have created two separate web scraping scripts in Python, available at <code>python/vessel_info_scraping.ipynb</code>. These scripts mine information from the <a href="https://cgmix.uscg.mil/psix/psixsearch.aspx">USCG Port State Information Exchange website</a> and the <a href="https://www.webapps.nwfsc.noaa.gov/apex/ifq/f?p=112:23">NOAA limited entry dataset</a>. While the latter downloads the entire available dataset, the former extracts information for a given list of vessels of interest. Therefore, to run it, we must create a list of vessels of interest (<code>vessels_oi.csv</code>), in our case, the ones included in the vessel specification files that we are generating.</p>
+<p>In addition to vessel length information, the data from USCG contains information for tonnage, both in net tons or gross tons. We will use the latter as it is the common size measure used by IMO.</p>
+<p>For any missing length data, we can use the NOAA and ODFW dataset to supplement the information. Then for any additional missing values we will extrapolate length and tonnage values out of average values based on the available information.</p></li>
+<li><p><code>name_gis_file_for_fishing_effort_per_polygon</code>: the same file name indicated in <code>Gear</code> representing spatial effort by gear. In our case, these are fe_code_235, fe_code_233, fe_code_230_231, fe_code_234, fe_code_210, fe_code_211.</p></li>
+<li><p><code>name_gis_layer_field</code>: parameter defining the variable in <code>.shp</code> expressing the fishing effort, in our case <code>fe</code>. The units are not important since it can be interpreted in relative terms depending on what we specify in variable <code>is_gis_layer_field_relative_numbers</code>.</p></li>
+<li><p><code>is_gis_layer_field_relative_numbers</code>: Here we indicate whether the effort variable represents relative values or not. The default value is <code>FALSE</code>. Regarding the implications of using effort distribution expressed in relative terms, the GIS layer per metier is used to draw some probabilities for the vessel on specific fishing grounds defined by each metier. R routines should be adapted in that aspect to incorporate the contents of the shapefile.</p>
+<p>If relative values are available, you can still use the R routines designed for absolute values. Simply adjust the GIS layer to reflect the relative importance on a linear scale. For example, if some areas are 100 times more likely to be visited than others, assign a value of 1 to the less frequented polygon and 100 to the more frequented one.</p>
+<p>Units available from <span class="citation" data-cites="wang2024high">Wang et al. (<a href="references.html#ref-wang2024high" role="doc-biblioref">2024</a>)</span> are in <span class="math inline">\(km/km^2/year\)</span>. However, DISPLACE outputs express fishing effort as cumulative fishing time in hours. Therefore, we have adapted <span class="citation" data-cites="wang2024high">Wang et al. (<a href="references.html#ref-wang2024high" role="doc-biblioref">2024</a>)</span> methods to allow for comparison with the DISPLACE outputs.</p></li>
+<li><p><code>xfold_gis_layer_field</code>: <strong>unknown</strong>. Default value <code>1</code>.</p>
+<p><strong>NOTE: Bastardier mentioned that if we do the trick suggested above relative to the relative units, then we don’t need this term. What value should we assign to it if we don’t need it, 0? We should further clarify this parameter and see the implications of using effort expressed in km/km²/yr.</strong></p></li>
+<li><p><code>{population code}_kg_h</code>: This variable defines the catching capacity per fishing hour of a vessel or group of vessels for each population included in our analysis. Each population will have its own variable. For instance, our analysis includes <code>SAB_kg_h</code>, <code>SJU_kg_h</code>, <code>SJZ_kg_h</code>, and <code>MIP_kg_h</code>. This can be understood as a measure of CPUE for each individual vessel. However, it is primarily used in the simulation to define the rate of fishing and determine how much time is required to fill the storage capacity of each vessel.</p></li>
+<li><p><code>mean_kW</code>: Mean engine power. The only reliable dataset with engine power is the one shared by the ODFW. However, this is not complete and most of our vessels of interest are missing. The second dataset we could use is a GFW dataset of vessel metadata. However, the ID numbers for our vessels of interest do not match the ones used in the GFW dataset (SSVID and IMO), so we cannot merge the tables. For this reason, for those that can not be assigned using ODFW data, we will use vessels information from the GFW dataset with similar characteristics to ours to define a simple regression and establish an expression that allows us to estimate engine power from length and gear type.</p>
+<p>The regression defines engine power as a function of vessel length, tonnage, and fishing class. While length and tonnage can be directly applied to our <code>vessels_specifications</code> dataframe, the fishing classes used by GFW differ from ours. Therefore, we have established a mapping based on gear to relate the declaration codes with GFW fishing classes. Based on the descriptions from <a href="#tbl-declaration-codes-wang">Table&nbsp;<span>2.3</span></a> and by evaluating the <code>gear_name</code> and <code>declarations</code> variables from the VMS-tix data, we have established the mapping in tbl-class-mapping. For vessels associated with more than one class, the engine power is assigned based on the average <code>mean_kW</code> value across the classes to which they are assigned. Further, no predicted value will be lower than the minimum engine power from the dataset used to fit the model.</p>
+<p>This is a first approximation. The initial results show poor adjustments. We aim to obtain specific real data for each vessel. Alternatively, we will need to improve this approach. More vessel metadata including engine power can be find in the [iattc vessel registry](https://www.iattc.org/en-US/Management/Vessel-register?shortcut=RegionalVR#United%20States and the <a href="https://webgate.ec.europa.eu/fleet-europa/search_en">EU fleet registry</a></p></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-class-mapping" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Table&nbsp;2.4: Mapping used to assign GFW class to our vessels.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">code</th>
+<th style="text-align: left;">gear_type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">210</td>
+<td style="text-align: left;">set_longlines</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">211</td>
+<td style="text-align: left;">pots_and_traps</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">230</td>
+<td style="text-align: left;">trawlers</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">231</td>
+<td style="text-align: left;">trawlers</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">233</td>
+<td style="text-align: left;">set_longlines</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">234</td>
+<td style="text-align: left;">pots_and_traps</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">235</td>
+<td style="text-align: left;">set_longlines</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<ul>
+<li><p><code>fishing.speed.knots</code> and <code>cruise.speed.knots</code>: Average speed when the vessel is fishing and average speed when the vessel is cruising. We can get these values from the VMS data by discriminating fishing pings from the rest using <code>fishingornot</code> variable.</p></li>
+<li><p><code>fuel.tank.liter</code>: Correspond to fuel tank capacity. This parameters is quite important because it influence the trip duration. A half-empty fuel tank will trigger the vessel to return to port, assuming half of the fuel is used to go back (other reasons for returning to port include a full fish hold, or at the end of a day if your vessel is set to do daily trips, i.e., when trip duration is set to &lt;30h).</p>
+<p>There are no datasets available that allow us to match our vessel ids with tank capacity data. To establish <code>fuel.tank.liter</code>, we have opted to fit a polynomial model that allows us to get estimates of fuel tank capacity (<a href="#fig-fuel-tank">Figure&nbsp;<span>2.2</span></a>). The few data available was scraped from a <a href="https://dockstreetbrokers.com/vessels">broker’s website</a> selling fishing vessels in the USA. The web scraping scripts are available in <code>python/vessel_info_scraping.ipynb</code>, and allowed to access data for 116 fishing vessels. The only variable across our vessels’ characteristics and this dataset that we could use to fit a model and predict estimates for our vessels was vessel length. As with the assignment of engine power, no predicted value for tank capacity will be lower than the minimum tank capacity from the dataset used to fit the model.</p></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-fuel-tank" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fisheries_files/figure-html/fig-fuel-tank-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;2.2: Fuel tank capacity (liters) vs vessel length (meters).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><p><code>fuel.cons.h</code>: Corresponds to fuel consumption per hour. As with <code>fuel.tank.liter</code>, this parameter is also quite important because it determines the trip duration. It conditions the fuel availability, triggering a port return when the fuel tank is half-empty, assuming that given the consumption levels in different operational phases, half or more of the remaining fuel is used to go back. For this parameter, we will temporarily use the consumption expression from <span class="citation" data-cites="bastardie2013integrating">Bastardie et al. (<a href="references.html#ref-bastardie2013integrating" role="doc-biblioref">2013</a>)</span>. Improved methods can be used, but for preliminary analysis purposes, this will suffice. This expression defines fuel consumption per hour based on engine power in kW and a multiplier adjusted for different operational phases, which will be defined under the variables <code>multip.fuel.steaming</code>, <code>multip.fuel.fishing</code>, <code>multip.fuel.ret.port.fish</code>, and <code>multip.fuel.inactive</code>.</p>
+<p><code>fuel.cons.h</code> values need to be reviewed. Better approaches for establishing such consumption levels are available in the literature and should be considered for the final analysis.</p></li>
+</ul>
+<ul>
+<li><p><code>Operational phase multipliers</code>: These are multipliers on the fuel consumption per hour depending on the phases of a trip, as fuel consumption can vary during these phases.</p>
+<p><code>multip.fuel.steaming</code>: This multiplier adjusts the fuel consumption rate when the vessel is steaming, typically referring to traveling to or from fishing grounds.</p>
+<p><code>multip.fuel.fishing</code>: This multiplier adjusts the fuel consumption rate when the vessel is actively fishing. Fuel consumption during fishing can vary depending on the type of fishing gear used and the fishing methods employed.</p>
+<p><code>multip.fuel.ret.port.fish</code>: This multiplier adjusts the fuel consumption rate when the vessel is returning to port with its catch. The vessel might carry extra weight due to the fish caught, which could increase fuel consumption.</p>
+<p><code>multip.fuel.inactive</code>: This multiplier adjusts the fuel consumption rate when the vessel is inactive, such as when it is docked at port or anchored at sea. During this phase, the vessel would consume less fuel compared to active operations. It is also used for gillnetters setting nets at very low speeds, thus decreasing fuel consumption.</p>
+<p>In the absence of specific information, you can set all these multipliers to 1. However, for our preliminary analysis, we will use the values from <span class="citation" data-cites="bastardie2013integrating">Bastardie et al. (<a href="references.html#ref-bastardie2013integrating" role="doc-biblioref">2013</a>)</span>, with values of 1, 0.8, and 0.1 for the fishing, steaming, and inactive states, respectively. For fuel consumption when returning to port, we will use a value of 1.1, also used in other DISPLACE analyses from the Bastardie repository, as it slightly increases fuel consumption when the vessel is returning to port carrying all the catch.</p></li>
+<li><p><code>ave.storage.fish.kg</code>: Fish storage capacity. This is the vessel’s carrying capacity, which is defined as the best observed historical catches for such a vessel. This creates a somewhat artificial ceiling for total catches. It is used to trigger a return to port. We will calculate it using fish ticket data.</p></li>
+<li><p><code>nb_pings_per_trip</code>: This defines the frequency of changing fishing grounds within a trip. If this number is greater than 1, the vessel may shift between several fishing grounds instead of fishing in just one area. For instance, if the value is 1, the vessel will fish only in a single location and won’t switch grounds while fishing, which reduces navigation time between fishing areas. Higher values might result in larger times at sea as vessels switch more constantly between distant fishing grounds. After several testing simulations, we have set this parameter to 1. This means that a vessel will fish on a single ground during a trip, without switching to a different ground, which would result in longer navigation times. By doing so, we achieved a fishing distribution that closely resembles the one described by <span class="citation" data-cites="wang2024high">Wang et al. (<a href="references.html#ref-wang2024high" role="doc-biblioref">2024</a>)</span>.</p></li>
+<li><p><code>trip.duration.h</code>: Average trip duration per metier. This affects the times at sea in the simulation. We can test the effects if using maximum trip duration instead. Also, consider that when calculating, we’ll only group by <code>vesselid</code> and not by <code>port</code> and <code>gear</code>, since we are assuming this relates to the average trip duration capacity of a vessel regardless of the type of fishing it is participating in.</p></li>
+<li><p><code>Gamma_shape</code> and <code>Gamma_scale</code>: These parameters are set to draw a time to rest in port between consecutive trips. The latest DISPLACE usage by the Basterie team is not using such parameters but rather the GoFishing decision tree, which will be covered in other sections. The default values are <code>0.4485</code> and <code>336.7618</code>, respectively, which won’t be used if the GoFishing decision tree is active.</p></li>
+<li><p><code>weekEndStartDay</code>, <code>WeekEndEndDay</code>, <code>WorkHoursStart</code>, <code>WorkHoursEnd</code>: These variables can be used in the decision tree for <code>stopFishing</code> if a decision tree is provided in the <code>dtree</code> folder. In the absence of such a tree, the return to port event is triggered by conditions such as a half-empty fuel tank, full fish holds, or the end of a daily trip (if the vessel’s specifications indicate a trip duration of less than 30 hours). Therefore, the trip duration can be flexible, lasting more than a week and not necessarily following a regular pattern. For week days a number of the week (1:7), for hours (1:24).</p></li>
+<li><p><code>vessel_range_km</code>: Vessel range in kilometers, which defines how far a vessel can travel. Within the R routines, this parameter defines to which nodes an individual vessel has access to. Nodes outside that range, can not be visited. Currently, we calculate this by determining the maximum distance traveled among all trips and dividing it by 2 (round trip). Alternatively, we could reassess this by calculating the straight-line distance from the farthest point on a trip to the port, or the mean average distance travelled in each trip.</p>
+<p>NOTE: Any value above 4500 km yields an error in the R routines due to the straight-line issue mentioned above.</p></li>
+<li><p><code>RelativeEffort</code>: A measure of individual fishing effort (i.e., how much effort is exerted by that vessel or group of vessels). For instance, if a vessel is represented for different metiers (i.e., more than one row in the dataframe), then this can exert different fishing effort in each metier, summing up the distinct relative efforts to 1. Thus, for a vessel represented in multiple rows (different metiers), we have calculated its contribution to each metier in relative terms based on time.</p></li>
+<li><p><code>kW</code>: This is a redundant term and considered a useless legacy. The default value is <code>NA</code>.</p></li>
+</ul>
+<section id="file-overlook" class="level4" data-number="2.1.1.1">
+<h4 data-number="2.1.1.1" class="anchored" data-anchor-id="file-overlook"><span class="header-section-number">2.1.1.1</span> File overlook</h4>
+<p>Below is a sample of the <code>vessels_specifications_per_harbour_metiers.csv</code> input file, generated based on the above data (<a href="#tbl-vessels-specifications-example">Table&nbsp;<span>2.5</span></a>). Here we use made-up data for example purposes. Values do not reflect actual data.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-vessels-specifications-example" class="anchored">
+<table class="table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>Table&nbsp;2.5: Sample of vessels_specifications_per_harbour_metiers.csv input file. Vessel identification numbers are hidden for confidentiality. Made-up data is used for example purposes. Values do not reflect actual data.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">VesselId</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">nb_vessels</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Port</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Gear</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">RelativeEffort</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">VE_LEN</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Tonnage</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">name_gis_file_for_fishing_effort_per_polygon</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">name_gis_layer_field</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">is_gis_layer_field_relative_numbers</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">xfold_gis_layer_field</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">dcf_gear</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">SAB_kg_h</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">SJU_kg_h</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">SJZ_kg_h</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">MIP_kg_h</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">mean_kW</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">fishing.speed.knots</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">cruise.speed.knots</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">fuel.cons.h</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">fuel.tank.liter</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">ave.storage.fish.kg</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">nb_pings_per_trip</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Gamma_shape</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Gamma_scale</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">trip.duration.h</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">multip.fuel.steaming</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">multip.fuel.fishing</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">multip.fuel.ret.port.fish</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">multip.fuel.inactive</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">weekEndStartDay</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">WeekEndEndDay</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">WorkHoursStart</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">WorkHoursEnd</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">vessel_range_km</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">kW</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">*****</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Eureka</td>
+<td style="text-align: left;">fe_code_235</td>
+<td style="text-align: right;">1.0000000</td>
+<td style="text-align: right;">14.32560</td>
+<td style="text-align: right;">21.01741</td>
+<td style="text-align: left;">fe_code_235</td>
+<td style="text-align: left;">fe</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">233</td>
+<td style="text-align: right;">43.76349</td>
+<td style="text-align: right;">NaN</td>
+<td style="text-align: right;">NaN</td>
+<td style="text-align: right;">NaN</td>
+<td style="text-align: right;">135.1770</td>
+<td style="text-align: right;">1.2669391</td>
+<td style="text-align: right;">13.181264</td>
+<td style="text-align: right;">108.12266</td>
+<td style="text-align: right;">1097.9274</td>
+<td style="text-align: right;">679.9344</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.4485</td>
+<td style="text-align: right;">336.7618</td>
+<td style="text-align: right;">10.647778</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">205.45033</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">*****</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Morro_Bay</td>
+<td style="text-align: left;">fe_code_233</td>
+<td style="text-align: right;">0.0240895</td>
+<td style="text-align: right;">15.24000</td>
+<td style="text-align: right;">43.00000</td>
+<td style="text-align: left;">fe_code_233</td>
+<td style="text-align: left;">fe</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">233</td>
+<td style="text-align: right;">69.05565</td>
+<td style="text-align: right;">4.97459</td>
+<td style="text-align: right;">NaN</td>
+<td style="text-align: right;">NaN</td>
+<td style="text-align: right;">257.4246</td>
+<td style="text-align: right;">1.2263158</td>
+<td style="text-align: right;">7.185973</td>
+<td style="text-align: right;">50.40188</td>
+<td style="text-align: right;">2358.5337</td>
+<td style="text-align: right;">22978.5171</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.4485</td>
+<td style="text-align: right;">336.7618</td>
+<td style="text-align: right;">19.625000</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">427.45122</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">*****</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Morro_Bay</td>
+<td style="text-align: left;">fe_code_230_231</td>
+<td style="text-align: right;">0.0073502</td>
+<td style="text-align: right;">13.71600</td>
+<td style="text-align: right;">52.00000</td>
+<td style="text-align: left;">fe_code_230_231</td>
+<td style="text-align: left;">fe</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">235</td>
+<td style="text-align: right;">30.23801</td>
+<td style="text-align: right;">25.75665</td>
+<td style="text-align: right;">0.9432135</td>
+<td style="text-align: right;">NaN</td>
+<td style="text-align: right;">142.9478</td>
+<td style="text-align: right;">0.7895349</td>
+<td style="text-align: right;">7.551351</td>
+<td style="text-align: right;">56.04933</td>
+<td style="text-align: right;">60.0000</td>
+<td style="text-align: right;">1477.3491</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.4485</td>
+<td style="text-align: right;">336.7618</td>
+<td style="text-align: right;">15.191026</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">232.29298</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">*****</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Morro_Bay</td>
+<td style="text-align: left;">fe_code_230_231</td>
+<td style="text-align: right;">0.2488255</td>
+<td style="text-align: right;">18.71472</td>
+<td style="text-align: right;">60.00000</td>
+<td style="text-align: left;">fe_code_230_231</td>
+<td style="text-align: left;">fe</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">233</td>
+<td style="text-align: right;">22.77094</td>
+<td style="text-align: right;">NaN</td>
+<td style="text-align: right;">NaN</td>
+<td style="text-align: right;">NaN</td>
+<td style="text-align: right;">75.6079</td>
+<td style="text-align: right;">0.6677419</td>
+<td style="text-align: right;">11.554545</td>
+<td style="text-align: right;">22.44880</td>
+<td style="text-align: right;">884.4895</td>
+<td style="text-align: right;">6163.4081</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.4485</td>
+<td style="text-align: right;">336.7618</td>
+<td style="text-align: right;">43.502632</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">215.06230</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">*****</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Moss_Landing</td>
+<td style="text-align: left;">fe_code_234</td>
+<td style="text-align: right;">0.1064538</td>
+<td style="text-align: right;">15.54480</td>
+<td style="text-align: right;">38.00000</td>
+<td style="text-align: left;">fe_code_234</td>
+<td style="text-align: left;">fe</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">233</td>
+<td style="text-align: right;">57.12785</td>
+<td style="text-align: right;">NaN</td>
+<td style="text-align: right;">0.3364992</td>
+<td style="text-align: right;">NaN</td>
+<td style="text-align: right;">150.7665</td>
+<td style="text-align: right;">0.9404372</td>
+<td style="text-align: right;">8.359740</td>
+<td style="text-align: right;">42.75297</td>
+<td style="text-align: right;">962.8433</td>
+<td style="text-align: right;">367.8631</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.4485</td>
+<td style="text-align: right;">336.7618</td>
+<td style="text-align: right;">8.662222</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">183.47074</td>
+<td style="text-align: left;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">*****</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fort_Bragg</td>
+<td style="text-align: left;">fe_code_234</td>
+<td style="text-align: right;">0.1242751</td>
+<td style="text-align: right;">11.61288</td>
+<td style="text-align: right;">60.00000</td>
+<td style="text-align: left;">fe_code_234</td>
+<td style="text-align: left;">fe</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">210</td>
+<td style="text-align: right;">38.76733</td>
+<td style="text-align: right;">12.45022</td>
+<td style="text-align: right;">NaN</td>
+<td style="text-align: right;">NaN</td>
+<td style="text-align: right;">131.7546</td>
+<td style="text-align: right;">1.5638889</td>
+<td style="text-align: right;">6.438851</td>
+<td style="text-align: right;">27.22152</td>
+<td style="text-align: right;">60.0000</td>
+<td style="text-align: right;">1995.3512</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.4485</td>
+<td style="text-align: right;">336.7618</td>
+<td style="text-align: right;">22.131863</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">79.37515</td>
+<td style="text-align: left;">NA</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</div>
+</div>
+</section>
+</section>
+<section id="economic-data" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="economic-data"><span class="header-section-number">2.1.2</span> Economic data</h3>
+<p>Economic data has been extracted from NOAA’s fisheries explorer platform <a href="https://connect.fisheries.noaa.gov/WestCoastCatchShares/">FISHEYE</a>. This platform provides access to metrics describing certain vessel economic characteristics and groundfish fisheries, with data aggregated by gear groups, harbors, or size classes. Access to more granular data, preferably at the vessel level, has been requested and is still under consideration. In the meantime, we have used mean values, first assigning them by ports where available, and for the remaining cases, using the available gear group data. For vessels operating with more than one gear or from more than one port, average values have been applied.</p>
+<p>There are two files related to economic data describing individual vessels and fisheries. We do not have information for these two yet. (WORK IN PROGRESS)</p>
+<ul>
+<li><p><code>STECF/Economics_fs.csv</code>: Using default values from <a href="https://github.com/frabas?tab=repositories">MEESO study</a>. The values displayed do not reflect actual data from the West Coast or anywhere else in the United States.</p>
+<ul>
+<li><p><code>Annual_depreciation_rate</code>: the percentage by which an asset’s value decreases over the course of a year. It represents how much of the asset’s original cost is expensed as depreciation each year, based on its expected useful life.</p>
+<p>From the FISHEYE data, we can obtain both the vessel_market_value and vessel_replacement_value. Using these values, we could estimate the depreciation rate by calculating the percentage difference between the two. To estimate the annual depreciation rate, we would divide this percentage by the number of years from the vessel’s build year to the latest year for which FISHEYE provides information (i.e., 2022).</p>
+<p><strong>NOTE: Confirm with Bastardie if this refers only to the vessel or also the gear. FISHEYE includes both vessel and gear in this estimates (Confirm). Also, confirm the units, whether in % or per one.</strong></p></li>
+<li><p><code>Annual_discount_rate</code>: In 2023, the U.S. Office of Management and Budget (OMB) provided guidance on discount rates through Circular A-94. The recommended discount rates remained consistent with previous years, with a 3% rate for projects involving public investments or intergenerational impacts. Therefore, we will use this value for our analysis.</p></li>
+<li><p><code>Annual_insurance_costs_per_crew</code>: variable <code>Crew payments</code> in FISHEYE include wages, bonuses, benefits, payroll taxes, and unemployment insurance.</p></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-economics-fs-example" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Table&nbsp;2.6: Sample of the STECF/Economics_fs.csv input file. Adapted from the MEESO study. Not related to this study.</caption>
+<colgroup>
+<col style="width: 2%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 5%">
+<col style="width: 11%">
+<col style="width: 5%">
+<col style="width: 2%">
+<col style="width: 2%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 9%">
+<col style="width: 11%">
+<col style="width: 10%">
+<col style="width: 3%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">fs_name</th>
+<th style="text-align: right;">Annual_depreciation_rate</th>
+<th style="text-align: right;">Annual_discount_rate</th>
+<th style="text-align: right;">Annual_insurance_costs_per_crew</th>
+<th style="text-align: right;">Annual_other_income</th>
+<th style="text-align: right;">Crewshare_and_unpaid_labour_costs_percent</th>
+<th style="text-align: right;">Landing_costs_percent</th>
+<th style="text-align: right;">Nb_crew</th>
+<th style="text-align: right;">Nb_Vessels</th>
+<th style="text-align: right;">Opportunity_interest_rate</th>
+<th style="text-align: right;">Other_annual_fixed_costs</th>
+<th style="text-align: right;">Other_variable_costs_per_unit_effort</th>
+<th style="text-align: right;">Standard_annual_full_time_employment_hours</th>
+<th style="text-align: right;">Standard_labour_hour_opportunity_costs</th>
+<th style="text-align: right;">Vessel_value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">******</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">10000</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.04</td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1e+05</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">******</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">10000</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.04</td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1e+05</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">******</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">10000</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.04</td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1e+05</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<ul>
+<li><code>fisheries_economics_variables.csv</code>: Using default values from <a href="https://github.com/frabas?tab=repositories">MEESO study</a>. The values displayed do not reflect actual data from the West Coast or anywhere else in the United States.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-fisheries-economics-variables-example" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Table&nbsp;2.7: Sample of the fisheries_economics_variables.csv input file. Adapted from the MEESO study. Not related to this study.</caption>
+<colgroup>
+<col style="width: 1%">
+<col style="width: 2%">
+<col style="width: 2%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 11%">
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 10%">
+<col style="width: 11%">
+<col style="width: 6%">
+<col style="width: 3%">
+<col style="width: 6%">
+<col style="width: 7%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">VE_REF</th>
+<th style="text-align: right;">Nb_Vessels</th>
+<th style="text-align: right;">Nb_crew</th>
+<th style="text-align: right;">Annual_other_income</th>
+<th style="text-align: right;">Landing_costs_percent</th>
+<th style="text-align: right;">Crewshare_and_unpaid_labour_costs_percent</th>
+<th style="text-align: right;">Other_variable_costs_per_unit_effort</th>
+<th style="text-align: right;">Annual_insurance_costs_per_crew</th>
+<th style="text-align: right;">Standard_labour_hour_opportunity_costs</th>
+<th style="text-align: right;">Standard_annual_full_time_employment_hours</th>
+<th style="text-align: right;">Other_annual_fixed_costs</th>
+<th style="text-align: right;">Vessel_value</th>
+<th style="text-align: right;">Annual_depreciation_rate</th>
+<th style="text-align: right;">Opportunity_interest_rate</th>
+<th style="text-align: right;">Annual_discount_rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">******</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4790</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">27.9</td>
+<td style="text-align: right;">587</td>
+<td style="text-align: right;">1500</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">14000</td>
+<td style="text-align: right;">3e+05</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">******</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4790</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">27.9</td>
+<td style="text-align: right;">587</td>
+<td style="text-align: right;">1500</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">14000</td>
+<td style="text-align: right;">3e+05</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">******</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4790</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">27.9</td>
+<td style="text-align: right;">587</td>
+<td style="text-align: right;">1500</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">14000</td>
+<td style="text-align: right;">3e+05</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="harbors" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="harbors"><span class="header-section-number">2.1.3</span> Harbors</h3>
+<p>We will generate the <code>harbours.dat</code> file containing the harbors of interest based on the selection performed before.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-port-details" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Table&nbsp;2.8: Harbors details.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">port_name</th>
+<th style="text-align: right;">lon</th>
+<th style="text-align: right;">lat</th>
+<th style="text-align: right;">idx_port</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Crescent_City</td>
+<td style="text-align: right;">-124.2</td>
+<td style="text-align: right;">41.7</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Eureka</td>
+<td style="text-align: right;">-124.2</td>
+<td style="text-align: right;">40.8</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fort_Bragg</td>
+<td style="text-align: right;">-123.8</td>
+<td style="text-align: right;">39.4</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Monterey</td>
+<td style="text-align: right;">-121.9</td>
+<td style="text-align: right;">36.6</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Moss_Landing</td>
+<td style="text-align: right;">-121.8</td>
+<td style="text-align: right;">36.8</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Morro_Bay</td>
+<td style="text-align: right;">-120.9</td>
+<td style="text-align: right;">35.4</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Santa_Barbara</td>
+<td style="text-align: right;">-119.7</td>
+<td style="text-align: right;">34.4</td>
+<td style="text-align: right;">7</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="fisheries_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="selectivity" class="level3" data-number="2.1.4">
+<h3 data-number="2.1.4" class="anchored" data-anchor-id="selectivity"><span class="header-section-number">2.1.4</span> Selectivity</h3>
+<p>The file <code>fishing_gear_selectivity_ogives_per_stock.csv</code> contains the selectivity of each gear for each species by size bin. This information was extracted from the respective stock assessments. However, due to the lack of data from the original assessments, selectivity curves were approximated based on the following figures: Figure 33 from <span class="citation" data-cites="johnson2023sablefish">Johnson, Wetzel, and Tolimieri (<a href="references.html#ref-johnson2023sablefish" role="doc-biblioref">2023</a>)</span> for sablefish, Figure 85 from <span class="citation" data-cites="wetzel2021doversole">(<a href="references.html#ref-wetzel2021doversole" role="doc-biblioref"><strong>wetzel2021doversole?</strong></a>)</span> for Dover sole, Figure 43 from <span class="citation" data-cites="stephens2014longspine">Stephens and Taylor (<a href="references.html#ref-stephens2014longspine" role="doc-biblioref">2013</a>)</span> for longspine thornyhead, and Figure 22 from <span class="citation" data-cites="zahner2023shortspine">Zahner et al. (<a href="references.html#ref-zahner2023shortspine" role="doc-biblioref">2023</a>)</span> for shortspine thornyhead.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-selectivity-mip" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fisheries_files/figure-html/fig-selectivity-mip-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;2.3: Dover Sole selectivity across all gears.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-selectivity-sab" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fisheries_files/figure-html/fig-selectivity-sab-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;2.4: Sablefish selectivity by gear. Values were adapted to length using the von Bertalanffy growth function.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-selectivity-sjz" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fisheries_files/figure-html/fig-selectivity-sjz-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;2.5: Longspine thornyhead selectivity across all gears.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-selectivity-sju" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fisheries_files/figure-html/fig-selectivity-sju-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;2.6: Shortspine thornyhead selectivity by gear.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-selectivity-table" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Table&nbsp;2.9: Sample of the selectivity values by metier available in fishing_gear_selectivity_ogives_per_stock.csv.</caption>
+<colgroup>
+<col style="width: 6%">
+<col style="width: 2%">
+<col style="width: 3%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">metier_name</th>
+<th style="text-align: right;">met</th>
+<th style="text-align: left;">stock</th>
+<th style="text-align: right;">sz group 1</th>
+<th style="text-align: right;">sz group 2</th>
+<th style="text-align: right;">sz group 3</th>
+<th style="text-align: right;">sz group 4</th>
+<th style="text-align: right;">sz group 5</th>
+<th style="text-align: right;">sz group 6</th>
+<th style="text-align: right;">sz group 7</th>
+<th style="text-align: right;">sz group 8</th>
+<th style="text-align: right;">sz group 9</th>
+<th style="text-align: right;">sz group 10</th>
+<th style="text-align: right;">sz group 11</th>
+<th style="text-align: right;">sz group 12</th>
+<th style="text-align: right;">sz group 13</th>
+<th style="text-align: right;">sz group 14</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">fe_code_210</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">MIP</td>
+<td style="text-align: right;">0.00e+00</td>
+<td style="text-align: right;">0.0000000</td>
+<td style="text-align: right;">0.0000000</td>
+<td style="text-align: right;">0.0000006</td>
+<td style="text-align: right;">0.0002563</td>
+<td style="text-align: right;">0.0740046</td>
+<td style="text-align: right;">0.6124721</td>
+<td style="text-align: right;">0.6447205</td>
+<td style="text-align: right;">0.5672511</td>
+<td style="text-align: right;">0.4074960</td>
+<td style="text-align: right;">0.2183761</td>
+<td style="text-align: right;">0.0815591</td>
+<td style="text-align: right;">0.0212768</td>
+<td style="text-align: right;">0.0021564</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fe_code_210</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">SJZ</td>
+<td style="text-align: right;">7.46e-04</td>
+<td style="text-align: right;">0.0044963</td>
+<td style="text-align: right;">0.0265970</td>
+<td style="text-align: right;">0.1418511</td>
+<td style="text-align: right;">0.5000000</td>
+<td style="text-align: right;">0.8581489</td>
+<td style="text-align: right;">0.9734030</td>
+<td style="text-align: right;">0.9955037</td>
+<td style="text-align: right;">0.9992540</td>
+<td style="text-align: right;">0.9998766</td>
+<td style="text-align: right;">0.9999796</td>
+<td style="text-align: right;">0.9999966</td>
+<td style="text-align: right;">0.9999994</td>
+<td style="text-align: right;">0.9999999</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fe_code_210</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">SAB</td>
+<td style="text-align: right;">8.03e-05</td>
+<td style="text-align: right;">0.0001093</td>
+<td style="text-align: right;">0.0001525</td>
+<td style="text-align: right;">0.0002195</td>
+<td style="text-align: right;">0.0003274</td>
+<td style="text-align: right;">0.0005104</td>
+<td style="text-align: right;">0.0008412</td>
+<td style="text-align: right;">0.0014881</td>
+<td style="text-align: right;">0.0028927</td>
+<td style="text-align: right;">0.0064091</td>
+<td style="text-align: right;">0.0172076</td>
+<td style="text-align: right;">0.0621138</td>
+<td style="text-align: right;">0.3216720</td>
+<td style="text-align: right;">0.5350325</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fe_code_210</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">SJU</td>
+<td style="text-align: right;">3.70e-06</td>
+<td style="text-align: right;">0.0000836</td>
+<td style="text-align: right;">0.0012039</td>
+<td style="text-align: right;">0.0111090</td>
+<td style="text-align: right;">0.0657285</td>
+<td style="text-align: right;">0.2493522</td>
+<td style="text-align: right;">0.6065307</td>
+<td style="text-align: right;">0.9459595</td>
+<td style="text-align: right;">0.9459595</td>
+<td style="text-align: right;">0.6065307</td>
+<td style="text-align: right;">0.2493522</td>
+<td style="text-align: right;">0.0657285</td>
+<td style="text-align: right;">0.0111090</td>
+<td style="text-align: right;">0.0005200</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fe_code_211</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">MIP</td>
+<td style="text-align: right;">0.00e+00</td>
+<td style="text-align: right;">0.0000000</td>
+<td style="text-align: right;">0.0000000</td>
+<td style="text-align: right;">0.0000006</td>
+<td style="text-align: right;">0.0002563</td>
+<td style="text-align: right;">0.0740046</td>
+<td style="text-align: right;">0.6124721</td>
+<td style="text-align: right;">0.6447205</td>
+<td style="text-align: right;">0.5672511</td>
+<td style="text-align: right;">0.4074960</td>
+<td style="text-align: right;">0.2183761</td>
+<td style="text-align: right;">0.0815591</td>
+<td style="text-align: right;">0.0212768</td>
+<td style="text-align: right;">0.0021564</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fe_code_211</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">SJZ</td>
+<td style="text-align: right;">7.46e-04</td>
+<td style="text-align: right;">0.0044963</td>
+<td style="text-align: right;">0.0265970</td>
+<td style="text-align: right;">0.1418511</td>
+<td style="text-align: right;">0.5000000</td>
+<td style="text-align: right;">0.8581489</td>
+<td style="text-align: right;">0.9734030</td>
+<td style="text-align: right;">0.9955037</td>
+<td style="text-align: right;">0.9992540</td>
+<td style="text-align: right;">0.9998766</td>
+<td style="text-align: right;">0.9999796</td>
+<td style="text-align: right;">0.9999966</td>
+<td style="text-align: right;">0.9999994</td>
+<td style="text-align: right;">0.9999999</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-bastardie2013integrating" class="csl-entry" role="listitem">
+Bastardie, Francois, J Rasmus Nielsen, Bo Sølgaard Andersen, and Ole Ritzau Eigaard. 2013. <span>“Integrating Individual Trip Planning in Energy Efficiency–Building Decision Tree Models for Danish Fisheries.”</span> <em>Fisheries Research</em> 143: 119–30.
+</div>
+<div id="ref-johnson2023sablefish" class="csl-entry" role="listitem">
+Johnson, Kelli F., Chantel R. Wetzel, and Nick Tolimieri. 2023. <span>“Status of Sablefish (Anoplopoma Fimbria) Along the u.s. West Coast in 2023.”</span> 2725 Montlake Boulevard East, Seattle, Washington 98112: Northwest Fisheries Science Center, U.S. Department of Commerce, National Oceanic; Atmospheric Administration, National Marine Fisheries Service. <a href="https://www.pcouncil.org/documents/2024/02/status-of-sablefish-anoplopoma-fimbria-along-the-u-s-west-coast-in-2023.pdf/">https://www.pcouncil.org/documents/2024/02/status-of-sablefish-anoplopoma-fimbria-along-the-u-s-west-coast-in-2023.pdf/</a>.
+</div>
+<div id="ref-stephens2014longspine" class="csl-entry" role="listitem">
+Stephens, A, and IG Taylor. 2013. <span>“Stock Assessment and Status of Longspine Thornyhead (Sebastolobus Altivelis) Off California, Oregon and Washington in 2013.”</span> Portland, Or: PFMC. <a href="https://www.pcouncil.org/documents/2014/02/stock-assessment-and-status-of-longspine-thornyhead-sebastolobus-altivelis-off-california-oregon-and-washington-in-2013-published-january-5-2014.pdf/">https://www.pcouncil.org/documents/2014/02/stock-assessment-and-status-of-longspine-thornyhead-sebastolobus-altivelis-off-california-oregon-and-washington-in-2013-published-january-5-2014.pdf/</a>.
+</div>
+<div id="ref-wang2024high" class="csl-entry" role="listitem">
+Wang, Yi-Hui, Benjamin I Ruttenberg, Ryan K Walter, Frank Pendleton, Jameal F Samhouri, Owen R Liu, and Crow White. 2024. <span>“High Resolution Assessment of Commercial Fisheries Activity Along the US West Coast Using Vessel Monitoring System Data with a Case Study Using California Groundfish Fisheries.”</span> <em>Plos One</em> 19 (6): e0298868.
+</div>
+<div id="ref-zahner2023shortspine" class="csl-entry" role="listitem">
+Zahner, Joshua A., Madison Heller-Shipley, Haley A. Oleynik, Sabrina G. Beyer, Pierre-Yves Hernvann, Matthieu Véron, Andrea N. Odell, et al. 2023. <span>“Status of Shortspine Thornyhead (Sebastolobus Alascanus) Along the US West Coast in 2023.”</span> Seattle, Washington; Vancouver, British Columbia; Santa Cruz, California; Davis, California; Juneau, Alaska: School of Aquatic; Fishery Sciences, University of Washington; Institute for the Oceans; Fisheries, University of British Columbia; Institute of Marine Sciences’ Fisheries Collaborative Program, University of California-Santa Cruz; Northwest Fisheries Science Center, U.S. Department of Commerce, National Oceanic; Atmospheric Administration, National Marine Fisheries Service; Alaska Fisheries Science Center, U.S. Department of Commerce, National Oceanic; Atmospheric Administration, National Marine Fisheries Service; University of California Davis. <a href="https://www.pcouncil.org/documents/2024/02/status-of-shortspine-thornyhead-sebastolobus-alascanus-along-the-us-west-coast-in-2023.pdf/">https://www.pcouncil.org/documents/2024/02/status-of-shortspine-thornyhead-sebastolobus-alascanus-along-the-us-west-coast-in-2023.pdf/</a>.
+</div>
+</div>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./populations.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Populations data</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./results.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Results</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
